@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
 
 namespace JsonTest {
    public enum WeekDay {
@@ -17,6 +18,8 @@ namespace JsonTest {
       public bool BoolVal { get; set; }
       public string StringVal { get; set; }
       public WeekDay WeekDay { get; set; }
+      public Point Point { get; set; }
+      public Color Color { get; set; }
       public int[] IntArr { get; set; }
       public string[] StringArr { get; set; }
       public SubClass SubClassVal { get; set; }
@@ -33,6 +36,8 @@ namespace JsonTest {
       public bool BoolVal { get; set; }
       public string StringVal { get; set; }
       public WeekDay WeekDay { get; set; }
+      public Point Point { get; set; }
+      public Color Color { get; set; }
       public int[] IntArr { get; set; }
       public string[] StringArr { get; set; }
    }
