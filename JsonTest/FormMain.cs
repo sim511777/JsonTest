@@ -11,12 +11,14 @@ using System.Runtime.Serialization.Json;
 using System.IO;
 using System.Web.Script.Serialization;
 using Newtonsoft.Json;
+using System.Xml.Serialization;
 
 namespace JsonTest {
    public enum JsonSerializerType {
       DataContractJsonSerializer,
       JavaScriptSerializer,
       JsonDotNet,
+      Xml,
    }
 
    public partial class FormMain : Form {
@@ -50,6 +52,13 @@ namespace JsonTest {
             };
             var json = JsonConvert.SerializeObject(obj, indent ? Formatting.Indented : Formatting.None, settings);
             return json;
+         } else if (serializerType == JsonSerializerType.Xml) {
+            var ser = new XmlSerializer(obj.GetType());
+            using (var ms = new MemoryStream()) {
+               ser.Serialize(ms, obj);
+               var json = Encoding.UTF8.GetString(ms.ToArray());
+               return json;
+            }
          } else {
             throw new Exception("Invalid Serializer");
          }
@@ -70,6 +79,12 @@ namespace JsonTest {
             JsonSerializerSettings a = new JsonSerializerSettings();
             var obj = JsonConvert.DeserializeObject<T>(json);
             return obj;
+         } else if (serializerType == JsonSerializerType.Xml) {
+            var ser = new XmlSerializer(typeof(T));
+            using (var ms = new MemoryStream(Encoding.UTF8.GetBytes(json))) {
+               var obj = (T)ser.Deserialize(ms);
+               return obj;
+            }
          } else {
             throw new Exception("Invalid Serializer");
          }
