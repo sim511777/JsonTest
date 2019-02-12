@@ -55,7 +55,7 @@ namespace JsonTest {
          }
       }
 
-      private T JsonToObject<T>(string json, JsonSerializerType serializerType, bool indent) {
+      private T JsonToObject<T>(string json, JsonSerializerType serializerType) {
          if (serializerType == JsonSerializerType.DataContractJsonSerializer) {
             var ser = new DataContractJsonSerializer(typeof(T));
             using (var ms = new MemoryStream(Encoding.UTF8.GetBytes(json))) {
@@ -96,15 +96,19 @@ namespace JsonTest {
       private void btnFromJson_Click(object sender, EventArgs e) {
          var jsonType = (JsonSerializerType)this.cbxJsonType.SelectedIndex;
          var indent = this.cbxIndent.Checked;
-         this.Log(string.Format("Jsont -> Object, JsonType: {0}, Indent: {1}", jsonType, indent));
+         this.Log(string.Format("Jsont -> Object, JsonType: {0}", jsonType));
          try {
             var json = this.tbxJson.Text;
-            var obj = this.JsonToObject<MyType>(json, jsonType, indent);
+            var obj = this.JsonToObject<MyType>(json, jsonType);
             this.propertyGrid1.SelectedObject = obj;
          } catch (Exception ex) {
             this.Log(ex.ToString());
          }
          this.tbxLog.AppendText("========");
+      }
+
+      private void btnSampleJson_Click(object sender, EventArgs e) {
+         this.tbxJson.Text = Properties.Resources.Json0;
       }
    }
 }

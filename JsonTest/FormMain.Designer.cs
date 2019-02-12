@@ -23,8 +23,10 @@
       /// 이 메서드의 내용을 코드 편집기로 수정하지 마세요.
       /// </summary>
       private void InitializeComponent() {
+         System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
          this.propertyGrid1 = new System.Windows.Forms.PropertyGrid();
          this.panel1 = new System.Windows.Forms.Panel();
+         this.tbxJson = new System.Windows.Forms.TextBox();
          this.splitter2 = new System.Windows.Forms.Splitter();
          this.tbxLog = new System.Windows.Forms.TextBox();
          this.label2 = new System.Windows.Forms.Label();
@@ -37,7 +39,7 @@
          this.splitter1 = new System.Windows.Forms.Splitter();
          this.panel2 = new System.Windows.Forms.Panel();
          this.panel3 = new System.Windows.Forms.Panel();
-         this.tbxJson = new System.Windows.Forms.TextBox();
+         this.btnSampleJson = new System.Windows.Forms.Button();
          this.panel1.SuspendLayout();
          this.panel2.SuspendLayout();
          this.panel3.SuspendLayout();
@@ -62,6 +64,18 @@
          this.panel1.Name = "panel1";
          this.panel1.Size = new System.Drawing.Size(657, 634);
          this.panel1.TabIndex = 1;
+         // 
+         // tbxJson
+         // 
+         this.tbxJson.Dock = System.Windows.Forms.DockStyle.Fill;
+         this.tbxJson.Font = new System.Drawing.Font("돋움체", 9F);
+         this.tbxJson.Location = new System.Drawing.Point(0, 0);
+         this.tbxJson.Multiline = true;
+         this.tbxJson.Name = "tbxJson";
+         this.tbxJson.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+         this.tbxJson.Size = new System.Drawing.Size(657, 530);
+         this.tbxJson.TabIndex = 7;
+         this.tbxJson.Text = resources.GetString("tbxJson.Text");
          // 
          // splitter2
          // 
@@ -171,6 +185,7 @@
          // 
          // panel3
          // 
+         this.panel3.Controls.Add(this.btnSampleJson);
          this.panel3.Controls.Add(this.btnNewObject);
          this.panel3.Controls.Add(this.label2);
          this.panel3.Controls.Add(this.btnToJson);
@@ -184,16 +199,15 @@
          this.panel3.Size = new System.Drawing.Size(331, 104);
          this.panel3.TabIndex = 0;
          // 
-         // tbxJson
+         // btnSampleJson
          // 
-         this.tbxJson.Dock = System.Windows.Forms.DockStyle.Fill;
-         this.tbxJson.Font = new System.Drawing.Font("돋움체", 9F);
-         this.tbxJson.Location = new System.Drawing.Point(0, 0);
-         this.tbxJson.Multiline = true;
-         this.tbxJson.Name = "tbxJson";
-         this.tbxJson.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-         this.tbxJson.Size = new System.Drawing.Size(657, 530);
-         this.tbxJson.TabIndex = 7;
+         this.btnSampleJson.Location = new System.Drawing.Point(225, 3);
+         this.btnSampleJson.Name = "btnSampleJson";
+         this.btnSampleJson.Size = new System.Drawing.Size(103, 23);
+         this.btnSampleJson.TabIndex = 0;
+         this.btnSampleJson.Text = "Sample Json";
+         this.btnSampleJson.UseVisualStyleBackColor = true;
+         this.btnSampleJson.Click += new System.EventHandler(this.btnSampleJson_Click);
          // 
          // FormMain
          // 
@@ -231,6 +245,7 @@
       private System.Windows.Forms.Panel panel2;
       private System.Windows.Forms.Panel panel3;
       private System.Windows.Forms.TextBox tbxJson;
+      private System.Windows.Forms.Button btnSampleJson;
    }
 }
 
