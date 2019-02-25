@@ -104,6 +104,10 @@ namespace JsonTest {
                 var obj = this.propertyGrid1.SelectedObject;
                 var json = this.ObjectToJson(obj, jsonType, indent);
                 this.tbxJson.Text = json;
+                if (jsonType == JsonSerializerType.Xml)
+                    this.tbxJson.Document.HighlightingStrategy = HighlightingStrategyFactory.CreateHighlightingStrategy("XML");
+                else
+                    this.tbxJson.Document.HighlightingStrategy = HighlightingStrategyFactory.CreateHighlightingStrategy("JavaScript");
             } catch (Exception ex) {
                 this.Log(ex.ToString());
             }
