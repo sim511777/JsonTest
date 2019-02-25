@@ -119,69 +119,114 @@
   </resheader>
   <data name="tbxJson.Text" xml:space="preserve">
     <value>{
-  "BoolVal": false,
-  "FloatVal": 0,
-  "IntArr": [
-    0,
-    0
-  ],
-  "IntVal": 0,
-  "StringArr": [
-    "asdf",
-    "adsfg"
-  ],
-  "StringVal": null,
-  "SubClassArr": [
-    {
-      "BoolVal": false,
-      "FloatVal": 0,
-      "IntArr": [
-        0,
-        0,
-        0
-      ],
-      "IntVal": 0,
-      "StringArr": [
-        "akgkl",
-        ";oiwjli;e"
-      ],
-      "StringVal": "ggg",
-      "WeekDay": 0
+    "BoolVal": true,
+    "Color": {
+      "knownColor": 166,
+      "name": null,
+      "state": 1,
+      "value": 0
     },
-    {
-      "BoolVal": false,
-      "FloatVal": 0,
-      "IntArr": [
-        0,
-        0
-      ],
-      "IntVal": 0,
-      "StringArr": [
-        ";liw",
-        "gfklj",
-        "qlkjgjl",
-        "aljsdfl"
-      ],
-      "StringVal": "qerwer",
-      "WeekDay": 0
-    }
-  ],
-  "SubClassVal": {
-    "BoolVal": false,
-    "FloatVal": 0,
+    "FloatVal": 1.2,
     "IntArr": [
-      0,
-      0
+      3,
+      2,
+      1
     ],
-    "IntVal": 0,
+    "IntVal": 1,
+    "Point": {
+      "x": 100,
+      "y": 200
+    },
     "StringArr": [
-      "gdg",
-      "werhwerg"
+      "헬로",
+      "월드다",
+      "ㅋㅋㅋ"
     ],
-    "StringVal": "asdf",
-    "WeekDay": 0
-  },
-  "WeekDay": 0
-}</value>
+    "StringVal": "헬로 월드다.ㅋㅋㅋ",
+    "SubClassArr": [
+      {
+        "BoolVal": true,
+        "Color": {
+          "knownColor": 166,
+          "name": null,
+          "state": 1,
+          "value": 0
+        },
+        "FloatVal": 1.2,
+        "IntArr": [
+          3,
+          2,
+          1
+        ],
+        "IntVal": 1,
+        "Point": {
+          "x": 100,
+          "y": 200
+        },
+        "StringArr": [
+          "헬로",
+          "월드다",
+          "ㅋㅋㅋ"
+        ],
+        "StringVal": "헬로 월드다. ㅋㅋㅋ",
+        "WeekDay": 5
+        },
+      {
+        "BoolVal": true,
+        "Color": {
+          "knownColor": 166,
+          "name": null,
+          "state": 1,
+          "value": 0
+        },
+        "FloatVal": 1.2,
+        "IntArr": [
+          3,
+          2,
+          1
+        ],
+        "IntVal": 1,
+        "Point": {
+          "x": 100,
+          "y": 200
+        },
+        "StringArr": [
+          "헬로",
+          "월드다",
+          "ㅋㅋㅋ"
+        ],
+        "StringVal": "헬로 월드다. ㅋㅋㅋ",
+        "WeekDay": 5
+        }
+    ],
+    "SubClassVal": {
+      "BoolVal": true,
+      "Color": {
+        "knownColor": 166,
+        "name": null,
+        "state": 1,
+        "value": 0
+      },
+      "FloatVal": 1.2,
+      "IntArr": [
+        3,
+        2,
+        1
+      ],
+      "IntVal": 1,
+      "Point": {
+        "x": 100,
+        "y": 200
+      },
+      "StringArr": [
+        "헬로",
+        "월드다",
+        "ㅋㅋㅋ"
+      ],
+      "StringVal": "헬로 월드다. ㅋㅋㅋ",
+      "WeekDay": 5
+    },
+    "WeekDay": 5
+  }</value>
   </data>
 </root>
