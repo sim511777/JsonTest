@@ -25,6 +25,7 @@ namespace JsonTest {
     public partial class FormMain : Form {
         public FormMain() {
             InitializeComponent();
+            this.tbxJson.Text = JsonTest.Properties.Resources.Json0;
             this.tbxJson.Document.HighlightingStrategy = HighlightingStrategyFactory.CreateHighlightingStrategy("JavaScript");
             this.cbxJsonType.Items.AddRange(Enum.GetNames(typeof(JsonSerializerType)));
             this.cbxJsonType.SelectedIndex = 0;

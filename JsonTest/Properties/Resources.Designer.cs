@@ -62,39 +62,39 @@ namespace JsonTest.Properties {
         
         /// <summary>
         ///   {
-        ///  &quot;BoolVal&quot;: false,
-        ///  &quot;FloatVal&quot;: 0,
+        ///  &quot;IntVal&quot;: 1,
+        ///  &quot;FloatVal&quot;: 1.2,
+        ///  &quot;BoolVal&quot;: true,
+        ///  &quot;StringVal&quot;: &quot;헬로 월드다.ㅋㅋㅋ&quot;,
+        ///  &quot;WeekDay&quot;: 5,
+        ///  &quot;Point&quot;: {
+        ///    &quot;x&quot;: 100,
+        ///    &quot;y&quot;: 200
+        ///  },
+        ///  &quot;Color&quot;: {
+        ///    &quot;knownColor&quot;: 166,
+        ///    &quot;name&quot;: null,
+        ///    &quot;state&quot;: 1,
+        ///    &quot;value&quot;: 0
+        ///  },
         ///  &quot;IntArr&quot;: [
-        ///    0,
-        ///    0
+        ///    3,
+        ///    2,
+        ///    1
         ///  ],
-        ///  &quot;IntVal&quot;: 0,
         ///  &quot;StringArr&quot;: [
-        ///    &quot;asdf&quot;,
-        ///    &quot;adsfg&quot;
+        ///    &quot;헬로&quot;,
+        ///    &quot;월드다&quot;,
+        ///    &quot;ㅋㅋㅋ&quot;
         ///  ],
-        ///  &quot;StringVal&quot;: null,
-        ///  &quot;SubClassArr&quot;: [
-        ///    {
-        ///      &quot;BoolVal&quot;: false,
-        ///      &quot;FloatVal&quot;: 0,
-        ///      &quot;IntArr&quot;: [
-        ///        0,
-        ///        0,
-        ///        0
-        ///      ],
-        ///      &quot;IntVal&quot;: 0,
-        ///      &quot;StringArr&quot;: [
-        ///        &quot;akgkl&quot;,
-        ///        &quot;;oiwjli;e&quot;
-        ///      ],
-        ///      &quot;StringVal&quot;: &quot;ggg&quot;,
-        ///      &quot;WeekDay&quot;: 0
-        ///    },
-        ///    {
-        ///      &quot;BoolVal&quot;: false,
-        ///      &quot;FloatVal&quot;: 0,
-        ///      &quot;I[나머지 문자열은 잘림]&quot;;과(와) 유사한 지역화된 문자열을 찾습니다.
+        ///  &quot;SubClassVal&quot;: {
+        ///    &quot;IntVal&quot;: 1,
+        ///    &quot;FloatVal&quot;: 1.2,
+        ///    &quot;BoolVal&quot;: true,
+        ///    &quot;StringVal&quot;: &quot;헬로 월드다. ㅋㅋㅋ&quot;,
+        ///    &quot;WeekDay&quot;: 5,
+        ///    &quot;Point&quot;: {
+        ///      &quot;x&quot;[나머지 문자열은 잘림]&quot;;과(와) 유사한 지역화된 문자열을 찾습니다.
         /// </summary>
         internal static string Json0 {
             get {
